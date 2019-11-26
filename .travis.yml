@@ -1,0 +1,16 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+install:
+  - docker build -t dolibarr .
+
+script:
+  - docker run -it -p 80:80 dolibarr
+
+after_script:
+  - docker images
+    
