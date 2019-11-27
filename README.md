@@ -16,7 +16,7 @@
         
 - Docker-compose file contains the nessary tasks to run the images of dolibarr and Mariadb, you should execute it to run the containers :
 
-       docker-compose up
+        docker-compose up
   
 - The files db-deployment.yaml, dolibarr-deployment.yaml, and dolibarr-service.yaml serve to be used with kubectl. You can generate them through using the docker-compose file and the Kompose (should be installed). 
 
